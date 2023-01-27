@@ -1,5 +1,6 @@
 <?php namespace Academy\Arrival;
 
+use Academy\Arrival\Classes\Extend\UserExtend;
 use Backend;
 use System\Classes\PluginBase;
 
@@ -40,7 +41,7 @@ class Plugin extends PluginBase
      */
     public function boot()
     {
-
+        UserExtend::userExtend_hasManyArrivals();
     }
 
     /**
@@ -54,7 +55,7 @@ class Plugin extends PluginBase
             'arrival' => [
                 'label'       => 'Arrival',
                 'url'         => Backend::url('academy/arrival/arrivals'),
-                'icon'        => 'icon-leaf',
+                'icon'        => 'icon-calendar',
                 'permissions' => ['academy.arrival.*'],
                 'order'       => 500,
             ],
