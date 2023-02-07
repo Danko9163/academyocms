@@ -65,4 +65,5 @@ class Arrival extends Model
             \RainLab\User\Models\User::class,
         ]
     ];
+
 }

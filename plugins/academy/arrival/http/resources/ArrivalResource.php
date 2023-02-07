@@ -5,6 +5,10 @@ use Illuminate\Http\Resources\Json\Resource;
 class ArrivalResource extends Resource
 {
 
+    /**
+     * @var mixed
+     */
+
     public function toArray($request)
     {
         return [
